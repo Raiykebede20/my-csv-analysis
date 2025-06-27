@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV - CSV Explorer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow-lg upload-card">
+            <h1 class="text-center mb-4 text-primary">Upload Your CSV</h1>
+            <p class="text-center text-muted">Select a CSV file to analyze.</p>
+
+            {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+            {% endif %}
+
+            <form method="POST" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group">
+                    <input type="file" name="file" id="fileInput" class="form-control-file" accept=".csv">
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success btn-lg custom-btn">Analyze File</button>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a href="{{ url_for('index') }}" class="text-muted"><small>Back to Welcome</small></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - CSV Explorer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow-lg welcome-card">
+            <h1 class="text-center mb-4 text-primary">CSV Data Explorer</h1>
+            <p class="text-center lead">Unlock insights from your data.</p>
+            <div class="text-center mt-4">
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-lg custom-btn">Start Exploring</a>
+            </div>
+            <div class="text-center mt-3 text-muted">
+                <small>&copy; 2025 Your Name. All rights reserved.</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

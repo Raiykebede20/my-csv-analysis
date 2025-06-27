@@ -1,0 +1,85 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+}
+
+/* Card Styles for Welcome and Upload Pages */
+.welcome-card, .upload-card {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #ffffff; /* White background for cards */
+    padding: 30px; /* More padding */
+    border: none; /* Remove default card border */
+}
+
+/* Custom Button Style */
+.custom-btn {
+    background-color: #007bff; /* Primary blue */
+    border-color: #007bff;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.2); /* Shadow on hover */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40 !important; /* Darker navbar */
+}
+
+.navbar-brand, .nav-link {
+    color: #f8f9fa !important; /* Light text for navbar */
+}
+
+/* Dashboard specific styles */
+.info-card, .summary-card, .chart-card {
+    border-left: 5px solid #007bff; /* Blue border on the left for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card {
+    border-left-color: #28a745; /* Green for summary cards */
+}
+
+.chart-card {
+    border-left-color: #17a2b8; /* Teal for chart cards */
+}
+
+/* Table styling for data preview */
+.table-responsive .table {
+    border-collapse: collapse; /* Ensure clean table lines */
+}
+
+.table-responsive .table th,
+.table-responsive .table td {
+    padding: 10px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-responsive .table thead th {
+    background-color: #e9ecef; /* Light header background */
+    font-weight: bold;
+}
+
+/* Section headings */
+h1, h2 {
+    font-weight: 600;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
